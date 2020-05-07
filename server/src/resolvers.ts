@@ -9,6 +9,6 @@ interface Deps {
 export const resolvers: IResolvers = {
   Query: {
     channels: (_, _2, { dataSources }: Deps) => dataSources.channelAPI.getChannelList(),
-    channel: (_, args: { id: string }, { dataSources }: Deps) => dataSources.channelAPI.getChannelById(args.id)
+    channel: (_, args, { dataSources }: Deps) => dataSources.channelAPI.getChannelById(args.id)
   }
 };
