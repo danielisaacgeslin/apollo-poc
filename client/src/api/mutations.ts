@@ -7,3 +7,9 @@ export const CREATE_CHANNEL = gql`
     }
   }
 `;
+
+export const DELETE_CHANNEL = gql`
+  mutation ($id: ID!) {
+    deleteChannel(id: $id)
+  }
+`;

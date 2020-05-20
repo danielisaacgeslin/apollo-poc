@@ -360,6 +360,10 @@ button {
   padding: 0;
 }
 
+*:disabled {
+  opacity: .5;
+}
+
 h1,
 h2,
 h3,
