@@ -16,7 +16,7 @@ export const button = css`
   padding: 2px 7px;
   background-color: ${COLOR.GRAY};
   color: ${COLOR.BLACK};
-  transition: all .2s;
+  transition: all 0.2s;
 `;
 
 export const successButton = css`

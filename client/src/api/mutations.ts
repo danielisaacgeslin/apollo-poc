@@ -1,7 +1,7 @@
 import { gql } from 'apollo-boost';
 
 export const CREATE_CHANNEL = gql`
-  mutation ($name: String!, $type: String!) {
+  mutation($name: String!, $type: String!) {
     createChannel(channel: { name: $name, type: $type }) {
       id
     }
@@ -9,7 +9,7 @@ export const CREATE_CHANNEL = gql`
 `;
 
 export const DELETE_CHANNEL = gql`
-  mutation ($id: ID!) {
+  mutation($id: ID!) {
     deleteChannel(id: $id)
   }
 `;
