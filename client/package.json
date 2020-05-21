@@ -25,9 +25,25 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false --forceExit --detectOpenHandles --verbose",
     "eject": "react-scripts eject",
     "format": "yarn prettier --write \"src/**/*.{ts,tsx}\""
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/styles.ts",
+      "!src/App.tsx",
+      "!src/**/index.tsx",
+      "!src/**/index.ts",
+      "!src/**/*.d.ts",
+      "!src/registerServiceWorker.ts"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "text-summary"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +62,7 @@
   },
   "devDependencies": {
     "@types/graphql": "^14.5.0",
+    "jest-emotion": "^10.0.32",
     "prettier": "^2.0.5"
   }
 }

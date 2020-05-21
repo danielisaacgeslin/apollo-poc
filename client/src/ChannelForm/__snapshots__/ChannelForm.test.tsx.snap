@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelForm should render 1`] = `
+.emotion-7 {
+  padding: 15px 0;
+  max-width: 300px;
+}
+
+.emotion-6 {
+  margin-top: 15px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  margin-bottom: 10px;
+}
+
+.emotion-1 {
+  height: 30px;
+  padding: 2px 5px;
+  background-color: #FFFFFF;
+  color: #252A2E;
+}
+
+.emotion-2 {
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #252A2E;
+}
+
+.emotion-4 {
+  font-size: 13px;
+  padding: 3px 10px;
+  background-color: #D6DDF6;
+  color: #252A2E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #3AC6AB;
+  color: #FFFFFF;
+}
+
+.emotion-5 {
+  font-size: 13px;
+  padding: 3px 10px;
+  background-color: #D6DDF6;
+  color: #252A2E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+<div>
+  <div
+    class="emotion-7"
+  >
+    <h4>
+      create a new channel
+    </h4>
+    <div
+      class="emotion-3"
+    >
+      <input
+        class="emotion-0 emotion-1"
+        data-testid="channel-name"
+        placeholder="type a channel name"
+        value=""
+      />
+      <select
+        class="emotion-2"
+        data-testid="channel-type"
+      >
+        <option
+          value="dm"
+        >
+          dm
+        </option>
+        <option
+          value="group"
+        >
+          group
+        </option>
+      </select>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <button
+        class="emotion-4"
+        data-testid="channel-save"
+        disabled=""
+        style="margin-right: 5px;"
+      >
+        save
+      </button>
+      <button
+        class="emotion-5"
+        data-testid="channel-cancel"
+      >
+        cancel
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ChannelForm should render loading 1`] = `
+.emotion-7 {
+  padding: 15px 0;
+  max-width: 300px;
+}
+
+.emotion-6 {
+  margin-top: 15px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  margin-bottom: 10px;
+}
+
+.emotion-1 {
+  height: 30px;
+  padding: 2px 5px;
+  background-color: #FFFFFF;
+  color: #252A2E;
+}
+
+.emotion-2 {
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #252A2E;
+}
+
+.emotion-4 {
+  font-size: 13px;
+  padding: 3px 10px;
+  background-color: #D6DDF6;
+  color: #252A2E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #3AC6AB;
+  color: #FFFFFF;
+}
+
+.emotion-5 {
+  font-size: 13px;
+  padding: 3px 10px;
+  background-color: #D6DDF6;
+  color: #252A2E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+<div>
+  <div
+    class="emotion-7"
+  >
+    <h4>
+      create a new channel
+    </h4>
+    <div
+      class="emotion-3"
+    >
+      <input
+        class="emotion-0 emotion-1"
+        data-testid="channel-name"
+        placeholder="type a channel name"
+        value=""
+      />
+      <select
+        class="emotion-2"
+        data-testid="channel-type"
+      >
+        <option
+          value="dm"
+        >
+          dm
+        </option>
+        <option
+          value="group"
+        >
+          group
+        </option>
+      </select>
+    </div>
+    <div
+      class="emotion-6"
+    >
+      <button
+        class="emotion-4"
+        data-testid="channel-save"
+        disabled=""
+        style="margin-right: 5px;"
+      >
+        save
+      </button>
+      <button
+        class="emotion-5"
+        data-testid="channel-cancel"
+        disabled=""
+      >
+        cancel
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -6,7 +6,7 @@ import { Select } from '../shared/Select';
 import { Input } from '../shared/Input';
 import { buttonContainer, container, controlContainer, input } from './styles';
 
-const types = ['dm', 'group'];
+export const types = ['dm', 'group'];
 const initialState = { name: '', type: types[0] };
 
 export interface Props {
@@ -34,8 +34,8 @@ const ChannelForm = ({ isLoading, onSave }: Props) => {
     <div className={container}>
       <h4>create a new channel</h4>
       <div className={controlContainer}>
-        <Input placeholder="type a channel name" value={state.name} onChange={onNameChange} className={input} />
-        <Select value={state.type} onChange={onTypeChange}>
+        <Input data-testid="channel-name" placeholder="type a channel name" value={state.name} onChange={onNameChange} className={input} />
+        <Select data-testid="channel-type" value={state.type} onChange={onTypeChange}>
           {types.map(option => (
             <option key={option} value={option}>
               {option}
@@ -44,10 +44,10 @@ const ChannelForm = ({ isLoading, onSave }: Props) => {
         </Select>
       </div>
       <div className={buttonContainer}>
-        <SuccessButton disabled={isLoading || !state.name} style={{ marginRight: 5 }} onClick={onSaveChannel}>
+        <SuccessButton data-testid="channel-save" disabled={isLoading || !state.name} style={{ marginRight: 5 }} onClick={onSaveChannel}>
           save
         </SuccessButton>
-        <Button disabled={isLoading} onClick={onCancel}>
+        <Button data-testid="channel-cancel" disabled={isLoading} onClick={onCancel}>
           cancel
         </Button>
       </div>
