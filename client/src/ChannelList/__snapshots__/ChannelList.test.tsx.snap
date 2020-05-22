@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChannelList should render 1`] = `
+.emotion-1 {
+  margin-bottom: 5px;
+}
+
+.emotion-0 {
+  font-size: 13px;
+  padding: 3px 10px;
+  background-color: #D6DDF6;
+  color: #252A2E;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: #B73F65;
+  color: #FFFFFF;
+}
+
+<div>
+  <div>
+    <h4>
+      Channel list
+    </h4>
+    <div>
+      <div>
+        <p
+          class="emotion-1"
+        >
+          <button
+            class="emotion-0"
+            data-testid="channel-delete"
+          >
+            x
+          </button>
+           
+          first
+           
+          <small>
+            (
+            dm
+            )
+          </small>
+        </p>
+        <p
+          class="emotion-1"
+        >
+          <button
+            class="emotion-0"
+            data-testid="channel-delete"
+          >
+            x
+          </button>
+           
+          second
+           
+          <small>
+            (
+            group
+            )
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ChannelList should render loading 1`] = `
+<div>
+  <div>
+    <h4>
+      Channel list
+    </h4>
+    <div>
+      <p>
+        loading list...
+      </p>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ChannelList should render with error 1`] = `
+<div>
+  <div>
+    <h4>
+      Channel list
+    </h4>
+    <div>
+      <p>
+        ups: 
+        error message
+      </p>
+      <p>
+        no results.
+      </p>
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ChannelList should render with no results 1`] = `
+<div>
+  <div>
+    <h4>
+      Channel list
+    </h4>
+    <div>
+      <p>
+        no results.
+      </p>
+      <div />
+    </div>
+  </div>
+</div>
+`;

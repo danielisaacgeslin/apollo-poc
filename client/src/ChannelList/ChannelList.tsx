@@ -28,7 +28,7 @@ const ChannelList = ({ channelList = [], onDelete, isLoading, isDeleting, error 
         <div>
           {channelList.map(({ id, name, type }) => (
             <p key={id} className={item}>
-              <DangerButton disabled={isDeleting} onClick={() => onDeleteChannel(id, name)}>
+              <DangerButton data-testid="channel-delete" disabled={isDeleting} onClick={() => onDeleteChannel(id, name)}>
                 x
               </DangerButton>{' '}
               {name} <small>({type})</small>
