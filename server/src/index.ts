@@ -1,19 +1,6 @@
-import { ApolloServer } from 'apollo-server';
-
-import { typeDefs } from './typeDefs';
-import { resolvers } from './resolvers';
-import { dataSources } from './datasources';
-
-const server = new ApolloServer({
-  introspection: true,
-  playground: true,
-  typeDefs,
-  resolvers,
-  dataSources,
-  context: {}
-});
+import { getServer } from './server';
 
 (async () => {
-  const { url } = await server.listen(4000);
+  const { url } = await (await getServer()).listen(4000);
   console.log(`Server running at ${url}`);
 })();

@@ -16,5 +16,5 @@
     "noImplicitAny": false,
     "strictNullChecks": false    
   },
-  "include": ["src"]
+  "include": ["src", "__tests__"]
 }
