@@ -24,9 +24,7 @@ describe('App', () => {
     deleteMock = jest.fn();
     mocks = [
       {
-        request: {
-          query: GET_FULL_CHANNEL_LIST
-        },
+        request: { query: GET_FULL_CHANNEL_LIST },
         result: () => {
           fetchMock();
           return {
@@ -40,31 +38,17 @@ describe('App', () => {
         }
       },
       {
-        request: {
-          query: CREATE_CHANNEL,
-          variables: { name: 'new channel', type: 'dm' }
-        },
+        request: { query: CREATE_CHANNEL, variables: { name: 'new channel', type: 'dm' } },
         result: () => {
           createMock();
-          return {
-            data: {
-              createChannel: { id: 'c' }
-            }
-          };
+          return { data: { createChannel: { id: 'c' } } };
         }
       },
       {
-        request: {
-          query: DELETE_CHANNEL,
-          variables: { id: 'a' }
-        },
+        request: { query: DELETE_CHANNEL, variables: { id: 'a' } },
         result: () => {
           deleteMock();
-          return {
-            data: {
-              deleteChannel: true
-            }
-          };
+          return { data: { deleteChannel: true } };
         }
       }
     ];
